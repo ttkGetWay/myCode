@@ -1,0 +1,20 @@
+/*缺料表单*/
+.employeesBody {
+
+}
+
+.messagePane {
+    -fx-background-color: #EADEDE;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 6, 0, 0, 1);;
+}
+.messagePane:hover{
+    -fx-background-color: #f3e8e8;
+    -fx-cursor: hand;
+}
+.messagePane:pressed{
+    -fx-background-color: #decece;
+}
+.redPoint {
+
+}

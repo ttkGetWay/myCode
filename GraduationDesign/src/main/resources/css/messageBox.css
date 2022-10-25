@@ -1,0 +1,7 @@
+.backGroundPane{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+.backGroundPane:hover{
+    -fx-background-color: #EFEFEF;
+}

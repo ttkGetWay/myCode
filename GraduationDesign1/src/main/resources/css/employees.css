@@ -1,0 +1,156 @@
+/*对应员工fxml*/
+.employeesPane {
+    -fx-background-insets: 0;
+    -fx-background-radius: 10;
+    -fx-background-color: #00000000;
+    -fx-effect: dropshadow(three-pass-box, #72b9da, 10.0, 0, 0, 0);
+}
+
+.titlePane {
+    -fx-background-color: #00AAA6;
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+
+}
+
+.blueButton {
+    -fx-background-radius: 40;
+    -fx-background-insets: 0;
+    -fx-background-color: linear-gradient(to right, #5B7DB1, #61A4BC, #8FBDD3);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.blueButton:hover {
+    -fx-background-color: linear-gradient(to right, #6084b9, #68aac2, #9cc6dc);
+
+    -fx-cursor: hand;
+}
+
+.blueButton:pressed {
+    -fx-background-color: linear-gradient(to right, #5B7DB1, #61A4BC, #8FBDD3);
+
+}
+
+
+.yellowButton {
+
+    -fx-background-radius: 40;
+    -fx-background-insets: 0;
+    -fx-background-color: linear-gradient(to right, #FFF47D, #FCF876, #FFFDA2);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.yellowButton:hover {
+    -fx-background-color: linear-gradient(to right, #fff58a, #f6e882, #fff9a9);
+    -fx-cursor: hand;
+}
+
+.yellowButton:pressed {
+    -fx-background-color: linear-gradient(to right, #FFF47D, #FCF876, #FFFDA2);
+ }
+
+.greenButton {
+    -fx-background-radius: 40;
+    -fx-background-insets: 0;
+    -fx-background-color: linear-gradient(to right, #61B15A, #ADCE74, #CEE397);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.greenButton:hover {
+    -fx-background-color: linear-gradient(to right, #77c46f, #b6d081, #d4e8a4);
+    -fx-cursor: hand;
+}
+
+.greenButton:pressed {
+    -fx-background-color: linear-gradient(to right, #61B15A, #ADCE74, #CEE397);
+}
+
+.redButton {
+    -fx-background-radius: 40;
+    -fx-background-insets: 0;
+    -fx-background-color: linear-gradient(to right, #FD5D5D, #FF8080, #FF9999);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 10, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.redButton:hover {
+    -fx-background-color: linear-gradient(to right, #ff6f6f, #ff8d8d, #ffa0a0);
+    -fx-cursor: hand;
+}
+
+.redButton:pressed {
+    -fx-background-color: linear-gradient(to right, #FD5D5D, #FF8080, #FF9999);
+}
+
+
+.minimizePane:hover {
+    -fx-background-color: #EEE5DE50;
+    -fx-cursor: hand;
+}
+.minimizePane:pressed{
+    -fx-background-color: #00000000;
+}
+
+.closePane {
+    -fx-background-radius: 0 5 5 0;
+}
+
+.closePane:hover {
+    -fx-background-color: #EE0000;
+    -fx-cursor: hand;
+}
+
+.mainBodyPane {
+    -fx-background-color: linear-gradient(to right, #D8D2CB, #EEEEEE);
+    -fx-background-radius: 0 0 5 5
+}
+.backGroundPane{
+    -fx-background-color: linear-gradient(to bottom, #F4F9F9, #CCF2F4, #A4EBF3,#AAAAAA);
+}
+.removeStyle1 {
+    -fx-background-radius: 15;
+    -fx-background-insets: 0;
+    /*-fx-background-color: #ECECEC;*/
+    -fx-background-color: linear-gradient(to right, #5ee6eb, #56bbf1, #4d77ff);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.removeStyle1:hover {
+    -fx-background-color: linear-gradient(to right, #68ecf1, #5cbdf1, #5f84ff);
+    -fx-cursor: hand;
+}
+
+.removeStyle1:pressed {
+    -fx-background-color: linear-gradient(to right, #5ee6eb, #56bbf1, #4d77ff);
+}
+
+/**
+    悬浮按钮的样式
+ */
+.messagePane {
+    -fx-background-color: #EADEDE;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 6, 0, 0, 1);;
+}
+.messagePane:hover{
+    -fx-background-color: #f3e8e8;
+    -fx-cursor: hand;
+}
+.messagePane:pressed{
+    -fx-background-color: #decece;
+}
+.redPoint {
+
+}
+
+
+

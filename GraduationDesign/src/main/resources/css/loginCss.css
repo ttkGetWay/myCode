@@ -1,0 +1,72 @@
+.loginPane {
+    -fx-background-radius: 20;
+    -fx-background-color: #668B8B00;
+    -fx-effect: dropshadow(three-pass-box, #72b9da, 10.0, 0, 0, 0);
+}
+
+.leftPane {
+    -fx-background-color: #C3E5AE;
+    -fx-background-radius: 20 20 20 20;
+
+}
+
+.rightPane {
+    -fx-background-color: linear-gradient(to right, #97DBAE, #C3E5AE);
+    -fx-background-radius: 0 20 20 0;
+}
+
+.setUpAndMinimizePane {
+    -fx-background-color: #00000000;
+}
+
+.setUpAndMinimizePane:hover {
+    -fx-background-color: #EEEEEE99;
+    -fx-cursor: hand;
+}
+
+.setUpAndMinimizePane:pressed{
+    -fx-background-color: #00000000;
+}
+
+
+
+.closePane {
+    -fx-background-color: #00000000;
+    -fx-background-radius: 0 20 0 0;
+}
+
+.closePane:hover {
+
+    -fx-background-color: #EE0000;
+    -fx-cursor: hand;
+
+}
+
+.userNameAndPsdPane {
+    -fx-padding: 0;
+    -fx-background-color: white;
+    -fx-background-radius: 5 5 5 5;
+}
+
+.userNameAndPsd {
+    -fx-background-color: white;
+    -fx-font-family: "微软雅黑";
+}
+
+
+.removeStyle{
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    /*-fx-background-color: #ECECEC;*/
+    -fx-background-color: linear-gradient(to right, #97DBAE, #C3E5AE);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.removeStyle:hover{
+    -fx-background-color: linear-gradient(to right, #a6e0ba, #cae8b6);
+    -fx-cursor: hand;
+}
+.removeStyle:pressed{
+    -fx-background-color: linear-gradient(to right, #97DBAE, #C3E5AE);
+}

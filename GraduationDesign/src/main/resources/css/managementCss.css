@@ -1,0 +1,129 @@
+.parentNode {
+    -fx-background-radius: 20;
+    -fx-background-color: #00000000;
+    -fx-effect: dropshadow(three-pass-box, #72b9da, 10.0, 0, 0, 0);
+}
+
+.topSideBar {
+    -fx-background-color: #50bc90;
+    -fx-background-radius: 20 20 0 0;
+}
+
+.searchBorderPane {
+    -fx-padding: 0 0 0 5;
+    -fx-background-color: white;
+    -fx-background-radius: 5 5 5 5;
+}
+
+.searchImageView {
+}
+
+.searchBox {
+    -fx-background-color: white;
+    -fx-font-family: "微软雅黑";
+}
+
+.minimizePane:hover {
+    -fx-background-color: #EEE5DE50;
+    -fx-cursor: hand;
+}
+
+.minimizePane:pressed {
+    -fx-background-color: #00000000;
+}
+
+.closePane {
+    -fx-background-radius: 0 20 0 0;
+}
+
+.closePane:hover {
+    -fx-background-color: #EE0000;
+    -fx-cursor: hand;
+}
+
+.bottomPane {
+    -fx-background-color: #EBEBEB;
+    -fx-background-radius: 0 0 0 20;
+}
+
+.rightPane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 0 0 20 0;
+}
+
+.mainBodyPane {
+    -fx-background-color: #EBEBEB;
+    -fx-background-radius: 0 0 20 0;
+}
+
+.messageListVie {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.dialogListView {
+    -fx-background-color: #F4F4F4;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.functionOne {
+    -fx-background-radius: 20 20 20 20;
+}
+
+.functionOne:hover {
+    -fx-background-color: #D1D3D5;
+    -fx-background-radius: 20 20 20 20;
+    -fx-cursor: hand;
+
+}
+
+.functionOne:focused {
+    -fx-background-color: #D1D3D5;
+}
+
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-border-insets: 1;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    /*-fx-background-color: transparent, white, transparent, white;*/
+    -fx-background-insets: 1;
+    /*-fx-border-insets: 1;*/
+}
+
+.text-area .scroll-bar:vertical {
+    -fx-pref-width: 10px;
+
+}
+
+.sentButton {
+    -fx-background-insets: 0;
+    -fx-background-color: #ECECEC;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+
+}
+
+.sentButton:hover {
+    -fx-cursor: hand;
+}
+
+.sentButton:pressed {
+    -fx-opacity: 75%;
+}
+
+.list-view {
+    -fx-background-color: #F4F4F4;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-pref-width: 10px;
+}

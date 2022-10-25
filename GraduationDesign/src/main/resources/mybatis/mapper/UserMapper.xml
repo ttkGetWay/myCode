@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ashink.graduationdesign.mapper.UserMapper">
+    <select id="selectByUserNameAndPassword" resultType="User">
+        select *
+        from t_user
+        where userName = #{userName}
+          and userPassword = #{userPassword}
+    </select>
+    <select id="queryUserList" resultType="User">
+        select *
+        from t_user
+    </select>
+    <select id="queryAccountStatus" resultType="AccountStatus">
+        select accountStatus
+        from t_astatus
+        where userName = #{userName}
+    </select>
+    <insert id="addStatus" parameterType="AccountStatus">
+        insert into t_astatus (id, userName, accountStatus)
+        values (#{id}, #{userName}, #{accountStatus})
+    </insert>
+    <delete id="deleteStatus" parameterType="String">
+        delete
+        from t_astatus
+        where userName = #{userName}
+    </delete>
+
+    <select id="exceptionTableMethod" resultType="ExceptionTable">
+        select *
+        from t_expcetion
+    </select>
+    <insert id="addExceptionTable" parameterType="ExceptionTable">
+        insert into t_expcetion (id, userName, superiorNum, startTime, endTime, isProcessing, problemType,
+                                 processingLevel)
+        values (#{id}, #{userName}, #{superiorNum}, #{startTime}, #{endTime}, #{isProcessing}, #{problemType},
+                #{processingLevel})
+    </insert>
+    <select id="queryEmployeesSuperior" resultType="WorkTable">
+        select superiorNum
+        from t_work
+        where userName = #{userName}
+    </select>
+
+    <select id="queryExceptionTableList" resultType="ExceptionTable">
+        select *
+        from t_expcetion
+    </select>
+    <select id="QueryEmpName" resultType="EmployeeInformation">
+        select *
+        from t_employeesinfo
+        where userName = #{userName}
+    </select>
+    <select id="queryLatestException" resultType="ExceptionTable">
+        select *
+        from t_expcetion
+        order by startTime desc;
+    </select>
+    <insert id="addExceptionStatus" parameterType="ExceptionStatus">
+        insert
+        into t_exstatus (id, userName, superiorNum, startTime, processingLevel, processingState)
+        values (#{id}, #{userName}, #{superiorNum}, #{startTime}, #{processingLevel}, #{processingState})
+    </insert>
+    <select id="queryExceptionStatus" resultType="ExceptionStatus">
+        select *
+        from t_exstatus
+        where userName = #{userName}
+          and startTime = #{startTime}
+    </select>
+    <update id="updateStatus">
+        update coursedesign.t_exstatus
+        set processingLevel=#{processingLevel},
+            superiorNum=#{superiorNum}
+        where userName = #{userName}
+          and startTime = #{startTime}
+    </update>
+
+    <update id="updateStatusTwo">
+        update coursedesign.t_exstatus
+        set processingState=#{processingState}
+        where userName = #{userName}
+          and startTime = #{startTime}
+    </update>
+    <select id="queryExceptionAll" resultType="ExceptionTable">
+        select *
+        from t_expcetion
+        where userName = #{userName}
+        order by startTime desc;
+    </select>
+
+    <select id="latestQueryState" resultType="ExceptionStatus">
+        select *
+        from coursedesign.t_exstatus
+        where t_exstatus.superiorNum = #{superiorNum}
+        order by t_exstatus.startTime desc limit 0,1;
+    </select>
+    <select id="queryProcessingLevel" resultType="WorkTable">
+        select *
+        from t_work
+        where userName = #{userName}
+    </select>
+    <update id="updateHandleExceptions">
+        update coursedesign.t_expcetion
+        set superiorNum=#{superiorNum},
+            endTime=#{endTime},
+            isProcessing=#{isProcessing},
+            processingLevel=#{processingLevel}
+        where userName = #{userName}
+          and startTime = #{startTime}
+    </update>
+
+    <update id="updateStatusThree">
+        update coursedesign.t_exstatus
+        set processingLevel=#{processingLevel},
+            processingState=#{processingState},
+            superiorNum=#{superiorNum}
+        where userName = #{userName}
+          and startTime = #{startTime}
+    </update>
+
+    <insert id="addAnnouncement">
+        insert
+        into t_notice (id, title, sender, content, sendTime)
+        values (#{id}, #{title}, #{sender}, #{content}, #{sendTime})
+    </insert>
+
+    <select id="queryLatestAnnouncements" resultType="Announcement">
+        select *
+        from t_notice
+        where to_days(sendTime) = to_days(NOW())
+        order by sendTime desc limit 1
+    </select>
+    <select id="queryAllEmployee" resultType="EmployeeInformation">
+        select *
+        from t_employeesinfo
+    </select>
+    <select id="queryWarehouse" resultType="InventoryTable">
+        select *
+        from t_inventory
+    </select>
+    <insert id="addAllMissingReceipt">
+        insert
+        into t_receipt (id, userName, materialName, materialNumber, specifications, unit, needNumber, inFormTime)
+        values (#{id}, #{userName}, #{materialName}, #{materialNumber}, #{specifications}, #{unit}, #{needNumber},
+                #{inFormTime})
+    </insert>
+    <insert id="addQualityProblem">
+        insert
+        into t_qprob (id, userName, nameMaterial, materialNumber, unitSelect, inFormTime, questionNumber,
+                      reasonDescription)
+        values (#{id}, #{userName}, #{nameMaterial}, #{materialNumber}, #{unitSelect}, #{inFormTime}, #{questionNumber},
+                #{reasonDescription})
+    </insert>
+</mapper>

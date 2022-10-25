@@ -1,0 +1,67 @@
+/*缺料表但填写*/
+.inTheFormPane {
+    -fx-background-color: linear-gradient(to bottom, #5ee6eb, #56bbf1, #4d77ff);
+}
+
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+    -fx-background-color: transparent, #F7F7F7, transparent, #F7F7F7;
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.unitComBox {
+    -fx-background-insets: 0;
+    -fx-background-radius: 5;
+}
+
+.removeStyle1 {
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    /*-fx-background-color: #ECECEC;*/
+    -fx-background-color: linear-gradient(to bottom, #5ee6eb, #56bbf1, #4d77ff);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.removeStyle1:hover {
+    -fx-background-color: linear-gradient(to right, #68ecf1, #5cbdf1, #5f84ff);
+    -fx-cursor: hand;
+}
+
+.removeStyle1:pressed {
+    -fx-background-color: linear-gradient(to right, #5ee6eb, #56bbf1, #4d77ff);
+}
+
+
+/*质量背景*/
+.qualityBackground {
+    -fx-background-color: linear-gradient(to bottom, #FFFE9A, #F3A333, #F16821);
+}
+
+.removeStyle2 {
+    -fx-background-radius: 5;
+    -fx-background-insets: 0;
+    -fx-background-color: linear-gradient(to bottom, #FFFE9A, #F3A333, #F16821);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.removeStyle2:hover {
+    -fx-background-color: linear-gradient(to right, #fffea6, #fcae4d, #fa7b3e);
+    -fx-cursor: hand;
+}
+
+.removeStyle2:pressed {
+    -fx-background-color: linear-gradient(to right, #FFFE9A, #F3A333, #F16821);
+}

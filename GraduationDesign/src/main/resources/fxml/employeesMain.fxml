@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="680.0" styleClass="employeesBody" stylesheets="@../css/employeesMainBody.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <StackPane maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0" styleClass="messagePane">
+            <children>
+                <ImageView fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="messageRound">
+                    <Image backgroundLoading="true" url="@../images/emMessage.png" />
+
+                    <clip>
+                        <Circle centerX="16" centerY="16">
+                            <radius>20</radius>
+                        </Circle>
+                    </clip>
+
+
+                </ImageView>
+                <Circle fill="DODGERBLUE" radius="4.0" strokeType="INSIDE" styleClass="redPoint">
+                    <StackPane.margin>
+                        <Insets left="20.0" top="-20.0" />
+                    </StackPane.margin>
+                </Circle>
+            </children>
+            <StackPane.margin>
+                <Insets left="590.0" top="480.0" />
+            </StackPane.margin>
+        </StackPane>
+    </children>
+</StackPane>

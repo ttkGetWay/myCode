@@ -1,0 +1,39 @@
+.usersPane{
+    -fx-background-color: #EBEBEB;
+    -fx-background-radius: 0 0 20 0;
+}
+.removeStyle{
+    -fx-background-insets: 0;
+    -fx-background-color: #ECECEC;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+}
+.removeStyle:hover{
+    -fx-cursor: hand;
+}
+.removeStyle:pressed{
+    -fx-opacity: 75%;
+}
+.removeCheckStyle{
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+
+}
+.removeCheckStyle:focused{
+    -fx-background-color: white;
+}
+.removeCheckStyle:selected{
+    -fx-background-color: transparent, white, transparent, white;
+}
+.check-box:hover{
+    -fx-cursor: hand;
+}
+
+.tableStyle{
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+
+}
+.logListView{
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}

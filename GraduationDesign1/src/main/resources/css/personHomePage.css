@@ -1,0 +1,21 @@
+.backGroundPane{
+    -fx-background-color: linear-gradient(to right, #BAFFB4, #FFFDA2, #FFAB76,#FF6363);
+}
+.removeStyle1 {
+    -fx-background-radius: 15;
+    -fx-background-insets: 0;
+    /*-fx-background-color: #ECECEC;*/
+    -fx-background-color: linear-gradient(to right, #5ee6eb, #56bbf1, #4d77ff);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.removeStyle1:hover {
+    -fx-background-color: linear-gradient(to right, #68ecf1, #5cbdf1, #5f84ff);
+    -fx-cursor: hand;
+}
+
+.removeStyle1:pressed {
+    -fx-background-color: linear-gradient(to right, #5ee6eb, #56bbf1, #4d77ff);
+}

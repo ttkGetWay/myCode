@@ -1,0 +1,53 @@
+.editPane {
+    -fx-background-color: #EBEBEB;
+    -fx-background-radius: 0 0 20 0;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-background-radius: 5;
+    -fx-cursor: Hand;
+
+}
+
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-background-insets: 0;
+}
+.text-area .scroll-bar:vertical {
+    -fx-pref-width: 10px;
+
+}
+
+.announcementContent {
+    -fx-background-color: #EFEFEF;
+}
+
+.releaseNow {
+    -fx-background-insets: 0;
+    -fx-background-color: #ECECEC;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+}
+
+.releaseNow:pressed {
+    -fx-opacity: 75%;
+}
+
+.publishedList {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+/* */
+.mesDialBox{
+    -fx-background-color: #EBEBEB;
+}
+.diaMessage {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}

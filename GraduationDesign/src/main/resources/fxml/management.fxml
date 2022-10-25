@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="backGroundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1300.0" styleClass="parentNode" stylesheets="@../css/managementCss.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="1280.0" styleClass="topSideBar">
+            <children>
+                <BorderPane layoutX="410.0" layoutY="5.0" styleClass="searchBorderPane">
+                    <right>
+                        <TextField id="searchField" alignment="CENTER" prefHeight="30.0" prefWidth="350.0" promptText="search" styleClass="searchBox" BorderPane.alignment="CENTER" />
+                    </right>
+                    <left>
+                        <Pane id="searchPane" layoutY="5.0" prefHeight="25.0" prefWidth="25.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <ImageView id="" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" y="2.0">
+                                    <image>
+                                        <Image url="@../images/search.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                    </left>
+                </BorderPane>
+                <Pane id="closePane" layoutX="1240.0" prefHeight="40.0" prefWidth="40.0" styleClass="closePane">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/close.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Pane id="minPane" layoutX="1198.0" prefHeight="40.0" prefWidth="40.0" styleClass="minimizePane">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/min.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+                <Label id="loginTitle" layoutX="20.0" layoutY="10.0" prefHeight="20.0" prefWidth="50.0" text="未登录" />
+            </children>
+        </Pane>
+        <Pane id="leftNavigationBar" layoutX="10.0" layoutY="50.0" prefHeight="680.0" prefWidth="100.0" styleClass="bottomPane">
+            <children>
+                <Pane id="messagePane" layoutX="10.0" layoutY="30.0" prefHeight="80.0" prefWidth="80.0" styleClass="functionOne">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/message.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="25.0" layoutY="60.0" text="消息">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane id="editPane" layoutX="10.0" layoutY="115.0" prefHeight="80.0" prefWidth="80.0" styleClass="functionOne">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/edit.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="25.0" layoutY="60.0" text="发布">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Pane id="usersPane" layoutX="10.0" layoutY="200.0" prefHeight="80.0" prefWidth="80.0" styleClass="functionOne">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/users.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="25.0" layoutY="60.0" text="用户" />
+                    </children>
+                </Pane>
+                <Pane id="logsPane" layoutX="10.0" layoutY="285.0" prefHeight="80.0" prefWidth="80.0" styleClass="functionOne">
+                    <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="15.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/log.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="25.0" layoutY="60.0" text="日志">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Pane id="rightInteractional" layoutX="110.0" layoutY="50.0" prefHeight="680.0" prefWidth="1180.0" styleClass="rightPane">
+            <children>
+                <Pane id="mainBodyPane" prefHeight="680.0" prefWidth="1180.0" styleClass="mainBodyPane" />
+            </children>
+        </Pane>
+    </children>
+</Pane>

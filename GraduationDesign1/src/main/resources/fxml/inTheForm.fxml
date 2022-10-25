@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="materialPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="680.0" styleClass="inTheFormPane" stylesheets="@../css/inTheFormCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="115.0" layoutY="88.0" minHeight="30.0" minWidth="80.0" text="物料名称">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField id="locationNumber" editable="false" layoutX="115.0" layoutY="120.0" prefHeight="35.0" prefWidth="450.0" styleClass="text-area" />
+      <Label layoutX="267.0" layoutY="25.0" prefWidth="146.0" text="缺料表单填写">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField id="materialName" layoutX="115.0" layoutY="190.0" prefHeight="35.0" prefWidth="450.0" styleClass="text-area">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding></TextField>
+      <Label layoutX="115.0" layoutY="158.0" minHeight="30.0" minWidth="80.0" text="物料编号">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="228.0" minHeight="30.0" minWidth="80.0" text="物料规格">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField id="materialType" layoutX="115.0" layoutY="260.0" prefHeight="35.0" prefWidth="450.0" styleClass="text-area">
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding></TextField>
+      <Label layoutX="115.0" layoutY="298.0" prefHeight="30.0" prefWidth="96.0" text="单位">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="368.0" prefHeight="32.0" prefWidth="96.0" text="剩余库存">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox id="unitSelect" layoutX="115.0" layoutY="330.0" prefHeight="35.0" prefWidth="450.0" styleClass="unitComBox" />
+      <Button id="submitButton" layoutX="265.0" layoutY="520.0" minHeight="35.0" minWidth="150.0" mnemonicParsing="false" styleClass="removeStyle1" text="提交" />
+      <ComboBox id="nameMaterial" layoutX="115.0" layoutY="120.0" prefHeight="35.0" prefWidth="450.0" />
+      <ComboBox id="materialNumber" layoutX="115.0" layoutY="190.0" prefHeight="35.0" prefWidth="450.0" />
+      <ComboBox id="specifications" layoutX="115.0" layoutY="260.0" prefHeight="35.0" prefWidth="450.0" />
+      <Label layoutX="115.0" layoutY="438.0" prefHeight="32.0" prefWidth="96.0" text="需要数量">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField id="needNumber" layoutX="115.0" layoutY="470.0" prefHeight="35.0" prefWidth="450.0" />
+      <ComboBox id="InventoryQuantity" layoutX="115.0" layoutY="400.0" prefHeight="35.0" prefWidth="450.0" />
+      <Button id="refreshEmp" layoutX="602.0" layoutY="26.0" mnemonicParsing="false" text="刷新" />
+   </children>
+</Pane>

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: Wholoveme,.?1333
+    url: jdbc:mysql://localhost:3306/coursedesign?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    #    serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  type-aliases-package: com.ashink.graduationdesign.dao
+  mapper-locations: classpath:mybatis/mapper/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  config-location: classpath:mybatis/mybatis-config.xml
+
+#server:
+#  port: 7000
